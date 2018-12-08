@@ -3,10 +3,10 @@
 		<form method="post" action="http:/project/main/daftar2">
 		<table class="table">
 			<tr>
-				<th><h4 align="center">Sign Up</h4></th>
+				<th><h4 align="center">Login</h4></th>
 			</tr>
 			<tr>
-				<th>Email :</th>
+				<th>Username :</th>
 			</tr>
 			<tr>
 				<th><input type="email" name="email" class="form-control"></th>
@@ -17,13 +17,7 @@
 			<tr>
 				<th><input type="text" name="user" class="form-control"></th>
 			</tr>
-			<tr>
-				<th>Password :</th>
-			</tr>
-			<tr>
-				<th><input type="Password" name="pass" class="form-control"></th>
-			</tr>
-			<th><center><button type="submit" name="submit" class="btn-warning" style="border-radius: 0px">Create Account</button></center></th>
+			<th><center><button type="submit" name="submit" class="btn-warning">Login</button></center></th>
 		</table>
 		</form>
 	</div>
