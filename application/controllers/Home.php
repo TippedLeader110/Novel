@@ -23,4 +23,14 @@ class Home extends CI_Controller {
 		$data['page'] = 'user_view/home';
 		$this->load->view('layout/main', $data);
 	}
+	public function login()
+	{
+		$data['page'] = 'user_view/login';
+		$this->load->view('layout/main', $data);	
+	}
+	public function daftar()
+	{
+		$data['page'] = 'user_view/daftar';
+		$this->load->view('layout/main', $data);
+	}
 }
