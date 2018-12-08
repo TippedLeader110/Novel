@@ -9,13 +9,13 @@
 				<th>Username :</th>
 			</tr>
 			<tr>
-				<th><input type="email" name="email" class="form-control"></th>
+				<th><input type="text" name="user" class="form-control"></th>
 			</tr>
 			<tr>
-				<th>Akun :</th>
+				<th>Password :</th>
 			</tr>	
 			<tr>
-				<th><input type="text" name="user" class="form-control"></th>
+				<th><input type="Password" name="pass" class="form-control"></th>
 			</tr>
 			<th><center><button type="submit" name="submit" class="btn-warning">Login</button></center></th>
 		</table>
