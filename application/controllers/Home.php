@@ -21,7 +21,6 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['page'] = 'user_view/home';
-		$data['data'] = $this->defmodel->read();
 		$this->load->view('layout/main', $data);
 	}
 }
