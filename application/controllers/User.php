@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class User extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,21 +18,15 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function login()
 	{
-		$data['kiri'] = 'user_view/home';
-		$data['kanan'] = 'user_view/konten-kanan';
-		$this->load->view('layout/main', $data);
+		$data['page'] = 'user_view/login';
+		$this->load->view('layout/user', $data);	
 	}
-	public function profile()
+		public function daftar()
 	{
-		$data['page'] = 'user_view/profile';
-		$this->load->view('layout/main', $data);
-	}	
-	public function deskripsi()
-	{
-		$data['page'] = 'user_view/deskripsi';
-		$this->load->view('layout/main', $data);
+		$data['page'] = 'user_view/daftar';
+		$this->load->view('layout/user', $data);
 	}
 
 }

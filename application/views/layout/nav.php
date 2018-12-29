@@ -1,17 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: orange;;>
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: orange;">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 18px;">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active aktif" style="margin-right: 10px;">
+        <a class="nav-link" href="/Novel/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" style="margin-right: 10px;">
+        <a class="nav-link" href="#">Genre <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
       </li>
+      <!--
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
@@ -23,13 +27,18 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+    -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <select class="form-control">
+        <option value="all">All</option>
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+      </select>
+      <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
+      <button class="btn btn-default my-2 my-sm-0" type="submit">Go!</button>
     </form>
+
   </div>
 </nav>
