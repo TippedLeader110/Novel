@@ -1,5 +1,5 @@
 	<div class="col-md-4 col-xs-4 col-sm-4 offset-md-4" style="border-style: solid;border-color:  orange; border-width: 15px; min-height: 400px;">
-		<form method="post" action="#">
+		<form method="post" action="<?php echo base_url() ?>user/loginpros">
 		<!--
 		<table class="table">
 			<tr>
@@ -77,3 +77,59 @@ function myFunction() {
   }
 }
 </script>
+<?php if ($this->session->flashdata('swel2')!=''): ?>
+<script type="text/javascript">
+    let timerInterval
+        Swal({
+          title: 'Kesalahan !',
+          html: 'Username atau Password anda salah !.',
+          type: 'error',
+          timer: 1500,
+          onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              Swal.getContent().querySelector('strong')
+                .textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          onClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.timer
+          ) {
+            console.log('I was closed by the timer')
+          }
+        })
+</script>
+<?php endif ?>
+<?php if ($this->session->flashdata('swel')!=''): ?>
+<script type="text/javascript">
+    let timerInterval
+        Swal({
+          title: 'Sukses!',
+          html: 'Berhasil daftar, silahkan login.',
+          type: 'success',
+          timer: 1500,
+          onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              Swal.getContent().querySelector('strong')
+                .textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          onClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.timer
+          ) {
+            console.log('I was closed by the timer')
+          }
+        })
+</script>
+<?php endif ?>

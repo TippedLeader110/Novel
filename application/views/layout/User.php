@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/source/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/source/css/style.css">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.33.1/dist/sweetalert2.all.min.js"></script>
 <!-- custom CSS -->
 <!-- Or open base url/source/css/style.css-->
 <style type="text/css">

@@ -115,3 +115,35 @@
         </ul>
     </div>
 </div>
+
+
+<!-- ----------------------------BAYHAQI AREA JANGAN EDIT------------------------------- -->
+
+<?php if ($this->session->flashdata('swel')!=''): ?>
+<script type="text/javascript">
+    let timerInterval
+        Swal({
+          title: 'Sukses!',
+          html: 'Berhasil login.',
+          type: 'success',
+          timer: 1500,
+          onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              Swal.getContent().querySelector('strong')
+                .textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          onClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.timer
+          ) {
+            console.log('I was closed by the timer')
+          }
+        })
+</script>
+<?php endif ?>

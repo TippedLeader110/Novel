@@ -31,12 +31,20 @@
 </div>
 -->
 	<div class="col-md-4 col-xs-4 col-sm-4 offset-md-4" style="border-style: solid;border-color:  orange; border-width: 15px; min-height: 400px;">
-		<form method="post" action="#">
+		<form method="post" action="<?php echo base_url() ?>user/daftarpros">
 	 		<div class="title-login">
 	 			<h3>Sign Up</h3>
 	 		</div>
 	 		<div class="form-login">
 	 			<table border="0" style="min-width: 320px;">
+	 				<tr>
+	 						<?php if (validation_errors()!=""): ?>
+								<th colspan="2"><div class="alert alert-danger" role="alert">
+  									<!-- Username atau Email sudah digunakan! -->
+  									<?php echo validation_errors() ?>
+								</div></th>
+							<?php endif ?>
+	 				</tr>
 	 				<tr>
 	 					<td colspan="2">
 	 						<input type="text" name="email" class="form-control" placeholder="Email">

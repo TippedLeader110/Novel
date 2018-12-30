@@ -23,10 +23,64 @@ class User extends CI_Controller {
 		$data['page'] = 'user_view/login';
 		$this->load->view('layout/user', $data);	
 	}
-		public function daftar()
+	public function daftar()
 	{
 		$data['page'] = 'user_view/daftar';
 		$this->load->view('layout/user', $data);
+	}
+	public function daftarpros()
+	{
+		$email = $this->input->post('email');
+		$user = $this->input->post('user');
+		$pass = $this->input->post('pass');
+		$pass = md5($pass);
+		$this->form_validation->set_rules('user', 'Username', 'required["%s wajib diisi"]|is_unique[users.username]',array('is_unique' => '%s sudah digunakan'));
+		$this->form_validation->set_rules('pass', 'Password', 'required[]',array('required' => '%s harus diisi'));
+		$this->form_validation->set_rules('email', 'Email', 'required["%s wajib diisi"]|is_unique[users.email]',array('is_unique' => '%s sudah digunakan'));
+
+		if ($this->form_validation->run()==FALSE) {
+			$data['page'] = 'user_view/daftar';
+			$this->load->view('layout/user', $data);
+		}
+		else{
+		$da = array('email' => $email, 'username' => $user, 'password' => $pass );
+		$this->db->insert('users', $da);
+		$this->session->set_flashdata('swel', 'value');
+		redirect('user/login');
+		}
+
+
+
+	}
+	public function loginpros()
+	{
+		$user = $this->input->post('user');
+		$pass = $this->input->post('pass');
+		$pass =md5($pass);
+		$this->db->where('username', $user);
+		$this->db->where('password', $pass);
+		$row = $this->db->get('users')->num_rows();
+		echo $row;
+		if ($row==0) {
+			$this->session->set_flashdata('swel2', 'value');
+			redirect('user/login', location);
+		}
+		else
+		{
+			$this->db->where('username', $user);
+			$b = $this->db->get('users')->result();
+			foreach ($b as $key => $value) {
+				$user = $value->username;
+			}
+			$this->session->user = $user;
+			$this->session->set_flashdata('swel', 'value');
+			redirect('home', location);
+		}
+	}
+	public function beta()
+	{
+		$this->session->set_flashdata('swel', 'value');
+		redirect('home', location);
 	}
 
 }
