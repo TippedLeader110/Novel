@@ -30,6 +30,11 @@ class Home extends CI_Controller {
 		$data['kanan'] = 'user_view/konten-kanan';
 		$this->load->view('layout/main', $data);
 	}
+	public function genre()
+	{
+		$data['page'] = 'user_view/genre';
+		$this->load->view('layout/main', $data);
+	}	
 	public function profile()
 	{
 		$data['page'] = 'user_view/profile';
