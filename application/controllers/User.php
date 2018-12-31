@@ -49,8 +49,11 @@ class User extends CI_Controller {
 		redirect('user/login');
 		}
 
-
-
+	}
+	public function profile()
+	{
+		$data['kiri'] = 'user_view/profile';
+		$this->load->view('layout/main', $data);	
 	}
 	public function loginpros()
 	{
