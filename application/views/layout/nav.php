@@ -7,10 +7,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 18px;">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active aktif" style="margin-right: 10px;">
-        <a class="nav-link" href="/Novel/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php echo base_url() ?>">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" style="margin-right: 10px;">
-        <a class="nav-link" href="#">Genre <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php echo base_url() ?>home/genre">Genre <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
