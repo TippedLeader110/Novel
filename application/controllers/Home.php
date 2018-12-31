@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 		$data['genre'] = 'active';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
-		$data['page'] = 'user_view/genre';
+		$data['page'] = 'user_view/genrepage';
 		$this->load->view('layout/user', $data);
 	}	
 	public function profile()
