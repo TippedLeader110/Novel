@@ -20,6 +20,12 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		// allow_url_include=1;
+		$requestURL = $this->defmodel->getFUSEKI();
+		include "a.php";
+		$data['dat'] = json_decode(request($requestURL),true);
+		// echo printArray($responseArray);
+		// echo $requestURL;	
 		$data['kiri'] = 'user_view/home';
 		$data['kanan'] = 'user_view/konten-kanan';
 		$this->load->view('layout/main', $data);
@@ -34,10 +40,6 @@ class Home extends CI_Controller {
 		$data['page'] = 'user_view/deskripsi';
 		$this->load->view('layout/main', $data);
 	}
-	public function genre()
-	{
-		$data['page'] = 'user_view/genre';
-		$this->load->view('layout/main', $data);
-	}
 
 }
+	
