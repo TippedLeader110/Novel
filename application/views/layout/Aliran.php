@@ -57,7 +57,7 @@
 		</div>
 	</div>
 	<div class="row" style="margin-top: 30px;">		
-			<?php $this->load->view($kiri); ?>
+			<?php $this->load->view($genre); ?>
 			<?php $this->load->view($kanan); ?>	
 	</div>
 	<div class="row">

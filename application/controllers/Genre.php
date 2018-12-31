@@ -19,10 +19,11 @@ class Genre extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function genre()
+	public function index()
 	{
-		$data['page'] = 'user_view/genre';
-		$this->load->view('layout/genre', $data);
+		$data['genre'] = 'user_view/genrepage';
+		$data['kanan'] = 'user_view/konten-kanan';
+		$this->load->view('layout/aliran', $data);
 	}
 
 }

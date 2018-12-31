@@ -1,6 +1,6 @@
 <div class="col-md-4 col-xs-4 col-sm-4">
 	<div class="container title-field">
-        <center><h4> <b>Top Novel of The Year</b> </h4></center>
+        <center><h4> <b>Popular</b> </h4></center>
     </div>
     <div class="container konten-kanan">
         <ul class="list-unstyled">
