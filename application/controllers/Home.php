@@ -28,12 +28,18 @@ class Home extends CI_Controller {
 		// echo $requestURL;	
 		$data['kiri'] = 'user_view/home';
 		$data['kanan'] = 'user_view/konten-kanan';
+		$data['home'] = 'active';
+		$data['genre'] = 'a';
+		$data['help'] = 'a';
 		$this->load->view('layout/main', $data);
 	}
 	public function genre()
 	{
+		$data['genre'] = 'active';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
 		$data['page'] = 'user_view/genre';
-		$this->load->view('layout/main', $data);
+		$this->load->view('layout/user', $data);
 	}	
 	public function profile()
 	{
