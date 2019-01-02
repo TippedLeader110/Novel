@@ -67,5 +67,24 @@ class Home extends CI_Controller {
 		$this->load->view('layout/deskr', $data);
 	}
 
+	public function inputfavorit()
+	{
+		$idwiki = $this->input->post('idwiki');
+		$insert = $this->input->post('insert');
+		$iduser = $this->input->post('iduser');
+		$date = $this->input->post('date');
+		$this->mainmodel->inputfavorit($idwiki, $insert, $iduser, $date); 
+	}
+
+	public function inputkomen()
+	{
+		$idwiki = $this->input->post('idwiki');
+		$komen = $this->input->post('komen');
+		$iduser = $this->input->post('iduser');
+		$date = $this->input->post('date');
+		$this->mainmodel->inputkomen($idwiki, $komen, $iduser, $date); 
+	}
+
+
 }
 	
