@@ -12,21 +12,22 @@
 		border-radius: 50%;
 		background: white;
 		margin-left: 10px;
-		margin-top: 2px;
-		align-items: center;
+		margin-top: 5px;
+		padding-left: 7px;
+		padding-top: 7px;
 	}
 	.icon-profile{
-		min-width: 40px;
-		max-width: 40px;
-		min-height:  40px;
-		max-height: 40px;
+		min-width: 30px;
+		max-width: 30px;
+		min-height:  30px;
+		max-height: 30px;
 	}
 	.title-profile{
 		font-size: 22px;
 		font-weight: 600;
 		color: white;
 		padding-left: 15px;
-		padding-top: 7px;
+		padding-top: 10px;
 	}
 	.img-deskr{
 		max-width: 200px;

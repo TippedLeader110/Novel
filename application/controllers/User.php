@@ -58,6 +58,14 @@ class User extends CI_Controller {
 		$data['kiri'] = 'user_view/profile';
 		$this->load->view('layout/profile', $data);	
 	}
+	public function editdata()
+	{	
+		$data['genre'] = 'a';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
+		$data['kiri'] = 'user_view/editdata';
+		$this->load->view('layout/profile', $data);	
+	}
 
 	public function loginpros()
 	{
