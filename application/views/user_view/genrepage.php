@@ -6,7 +6,7 @@
         <div class="table-responsive">
         <table class="table table-borderless">
         		<?php $br=0; ?>
-        	<?php foreach ($dat["results"]["bindings"] as $key): ?>
+        	<?php foreach ($r["results"]["bindings"] as $key): ?>
         		<?php if ($br==0): ?>
         			<tr>
         		<?php endif ?>

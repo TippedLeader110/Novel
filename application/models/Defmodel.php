@@ -55,7 +55,7 @@ class Defmodel extends CI_Model {
 
 		return $searchUrl;	
 	}
-	function genregetrdf()
+	function genregetrdf($uri)
 	{
 		
 		$format = 'json';
@@ -69,7 +69,8 @@ class Defmodel extends CI_Model {
 		?ab  d:literaryGenre ?bc.
 		?ab d:thumbnail ?c.
 		?bc rdfs:label ?b
-		FILTER langMatches(lang(?b),'en')
+		FILTER (lang(?b)='en').
+		FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
 
 		}
 
