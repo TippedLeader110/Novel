@@ -12,9 +12,7 @@
       <li class="nav-item <?php echo $genre ?>" style="margin-right: 10px;">
         <a class="nav-link" href="<?php echo base_url() ?>home/genre">Genre <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item <?php echo $help ?>">
-        <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
-      </li>
+      
       <!--
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

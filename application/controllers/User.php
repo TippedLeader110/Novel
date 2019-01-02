@@ -51,10 +51,14 @@ class User extends CI_Controller {
 
 	}
 	public function profile()
-	{
+	{	
+		$data['genre'] = 'a';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
 		$data['kiri'] = 'user_view/profile';
-		$this->load->view('layout/main', $data);	
+		$this->load->view('layout/profile', $data);	
 	}
+
 	public function loginpros()
 	{
 		$user = $this->input->post('user');

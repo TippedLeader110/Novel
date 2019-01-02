@@ -4,17 +4,41 @@
 	a:hover{
 		text-decoration: none;
 	}
+	.bg-icon-profile{
+		min-width: 45px;
+		max-width: 45px;
+		min-height:  45px;
+		max-height: 45px;
+		border-radius: 50%;
+		background: white;
+		margin-left: 10px;
+		margin-top: 2px;
+		align-items: center;
+	}
+	.icon-profile{
+		min-width: 40px;
+		max-width: 40px;
+		min-height:  40px;
+		max-height: 40px;
+	}
+	.title-profile{
+		font-size: 22px;
+		font-weight: 600;
+		color: white;
+		padding-left: 15px;
+		padding-top: 7px;
+	}
 	.img-deskr{
 		max-width: 200px;
 		min-width: 200px;
-		max-height: 300px;
-		min-height: 300px;
+		max-height: 250px;
+		min-height: 250px;
 	}
 	.bg-img-deskr{
 		max-width: 210px;
 		min-width: 210px;
-		max-height: 310px;
-		min-height: 310px;
+		max-height: 260px;
+		min-height: 260px;
 		background: #fff5e6;
 	}
 	.deskr-title{

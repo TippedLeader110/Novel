@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="margin-bottom: 145px;">
 	<div class="col-md-3">
 		<div class="bg-img-deskr">
 			<img src="#" class="img-deskr">
