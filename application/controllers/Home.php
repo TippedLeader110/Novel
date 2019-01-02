@@ -33,8 +33,16 @@ class Home extends CI_Controller {
 		$data['help'] = 'a';
 		$this->load->view('layout/main', $data);
 	}
+	public function test()
+	{
+		$data['page'] = 'user_view/daftar';
+		$this->load->view('layout/user', $data);	
+	}
 	public function genre()
 	{
+		$requestURL = $this->defmodel->genregetrdf();
+		include "a.php";
+		$data['dat'] = json_decode(request($requestURL),true);
 		$data['genre'] = 'active';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
