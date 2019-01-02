@@ -4,7 +4,31 @@
 	a:hover{
 		text-decoration: none;
 	}
-
+	.img-deskr{
+		max-width: 200px;
+		min-width: 200px;
+		max-height: 300px;
+		min-height: 300px;
+	}
+	.bg-img-deskr{
+		max-width: 210px;
+		min-width: 210px;
+		max-height: 310px;
+		min-height: 310px;
+		background: #fff5e6;
+	}
+	.deskr-title{
+		padding: 20px;
+		font-size: 24px;
+		font-weight: 700;
+		background: #fff5e6;
+	}
+	.deskr-subtitle{
+		padding: 20px;
+		font-size: 18px;
+		font-weight: 600;
+		background: #fff5e6;
+	}
 	.active{
 		font-weight: 700;
 	}
@@ -77,6 +101,7 @@
 		padding-top: 10px;
 		padding-right: 10px;
 		font-size: 16px;
+		margin-top: 15px;
 	}
 	.material-switch > input[type="checkbox"] {
     display: none;   

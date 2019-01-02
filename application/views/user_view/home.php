@@ -10,7 +10,8 @@
             <?php $u++; ?>
             <div class="carousel-item col-md-3  active">
                <div class="panel panel-default">
-                  <div class="panel-thumbnail">
+                  <div class="panel-thum
+                  bnail">
                     <a href="<?php $str ?>" title="<?php echo $key['wikiid']['value'] ?>" class="thumb">
                       <img class="img-fluid mx-auto d-block" src="<?php echo $key['c']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>">
                     </a>

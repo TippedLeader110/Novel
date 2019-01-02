@@ -64,8 +64,12 @@ class Home extends CI_Controller {
 	}	
 	public function deskripsi()
 	{
+		$data['genre'] = 'a';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
 		$data['page'] = 'user_view/deskripsi';
-		$this->load->view('layout/main', $data);
+		$data['kanan'] = 'user_view/konten-kanan';
+		$this->load->view('layout/deskr', $data);
 	}
 
 }
