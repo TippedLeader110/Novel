@@ -22,10 +22,10 @@
           </div>
         </div>
       </div>
+<?php endforeach ?>
     </div>
   </div>
 </div>
-<?php endforeach ?>
 <?php echo $u ?>
 
 
