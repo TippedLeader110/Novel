@@ -11,7 +11,7 @@
             <div class="row">
               <div class="bg-image-konten">
                 <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"  title="<?php echo $key['wikiid']['value'] ?>">
-                  <img src="<?php echo $key['c']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>" class="image-konten">
+                  <img style="height: 300px;width: 200px;" src="<?php echo $key['c']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>" class="image-konten">
                 </a>                
               </div>
               <div class="keterangan">
