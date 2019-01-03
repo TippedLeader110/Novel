@@ -6,7 +6,8 @@
       <?php $u=0; ?>
       <?php foreach ($dat["results"]["bindings"] as $key): ?>
       
-      <?php $id = rand(0,68) ?>
+      <?php $id = rand(0,30) ?>
+      <?php $id = $id + rand(1,27)  ?>
 
       <!-- konten -->
       <div class="col-md-3">
