@@ -79,7 +79,7 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
         ?genre2 d:wikiPageID ?wiki.
 		?ab d:author ?auth.
 		?ab d:wikiPageID ?wikiid.
-		FILTER (lang(?label)='en').
+		FILTER (lang(?b)='en').
 FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
 }
 LIMIT 10
