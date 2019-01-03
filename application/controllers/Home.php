@@ -56,6 +56,7 @@ class Home extends CI_Controller {
 				break;
 		}
 		}
+		// echo $re['a'];
 		$data['genre'] = 'active';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
@@ -78,10 +79,20 @@ class Home extends CI_Controller {
 	}
 	public function selectedgenre()
 	{
-		$data['genre'] = 'a';
+		$uri = $this->uri->segment(3);
+		include "a.php";
+		for ($i='a'; $i <= 'z' ; ++$i) { 
+			// echo "$i";
+		$re[$i] = $this->defmodel->taggetrdf($uri,$i);
+		$data[$i] = json_decode(request($re[$i]),true);
+		if ($i=='z') {
+				break;
+		}
+		}
+		$data['genre'] = 'active';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
-		$data['page'] = 'user_view/selected-genre';
+		$data['page'] = 'user_view/genre';
 		$data['kanan'] = 'user_view/konten-kanan';
 		$this->load->view('layout/selected-genre', $data);
 	}

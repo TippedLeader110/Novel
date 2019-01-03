@@ -52,7 +52,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -73,7 +73,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -94,7 +94,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -115,7 +115,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -136,7 +136,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -157,7 +157,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -178,7 +178,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -199,7 +199,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -220,7 +220,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -241,7 +241,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -262,7 +262,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -283,7 +283,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -304,7 +304,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -325,7 +325,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -346,7 +346,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -367,7 +367,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -388,7 +388,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -409,7 +409,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -430,7 +430,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -451,7 +451,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -472,7 +472,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -493,7 +493,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -514,7 +514,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -535,7 +535,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -556,7 +556,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
@@ -577,7 +577,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/genre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/selectedgenre/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>
