@@ -94,6 +94,42 @@ LIMIT 10
 
 		return $searchUrl;	
 	}
+	function searchgetrdf($uri)
+	{
+		
+		$format = 'json';
+		$query =
+		"
+
+		PREFIX d: <http://dbpedia.org/ontology/>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX dbpedia2: <http://dbpedia.org/property/>
+
+		SELECT DISTINCT ?b ?wiki WHERE {
+                ?ab  d:literaryGenre ?bg.
+		?ab d:thumbnail ?c.
+		?ab d:abstract ?abs.
+		?ab rdfs:label ?label.
+		?ab d:literaryGenre ?genre2.
+                ?genre2 rdfs:label ?b.
+                ?genre2 d:wikiPageID ?wiki.
+		?ab dbpedia2:author ?auth.
+		?ab d:wikiPageID ?wikiid.
+		FILTER (lang(?label)='en').
+FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
+}
+LIMIT 10
+
+
+		
+		";
+
+		$searchUrl = 'http://dbpedia.org/sparql?'
+		.'query=' .urlencode($query)
+		.'&format='.$format;
+
+		return $searchUrl;	
+	}
 	function genrerdf($genre)
 	{
 		

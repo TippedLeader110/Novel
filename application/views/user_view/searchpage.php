@@ -1,27 +1,18 @@
 <div class="col-md-12">
 	<div class="container">
-		<form >
-			
-		</form>
+		<form method="get">
 		<table class="table table-borderless" style="max-width: 800px;">
 			<tr>
-
-				<td style="max-width: 50px;">
-					<select class="form-control">
-				        <option value="all">All</option>
-				        <option value="1">option 1</option>
-				        <option value="2">option 2</option>
-				        <option value="3">option 3</option>
-     				 </select>
+				<td>
+					 <input class="form-control" type=get placeholder="Search.." aria-label="Search" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }">
 				</td>
 				<td>
-					 <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
-				</td>
-				<td>
-					<button class="btn btn-default my-2 my-sm-0" type="submit">Go!</button>
+					<button class="btn btn-default my-2 my-sm-0" type="submit" >Go!</button>
 				</td>
 			</tr>
 		</table>
+		</form>
+		</div>
 	</div>
 	<br>
 

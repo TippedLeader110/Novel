@@ -62,6 +62,18 @@ class Home extends CI_Controller {
 		$data['help'] = 'a';
 		$data['page'] = 'user_view/genrepage';
 		$this->load->view('layout/user', $data);
+	}
+	public function search()
+	{
+		include "a.php";
+		$sea = $this->input->get('cari');
+		$sea = $this->defmodel->genregetrdf($sea);
+		$data[$sea] = json_decode(request($sea),true);
+		$data['genre'] = 'active';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
+		$data['page'] = 'user_view/searchpage';
+		$this->load->view('layout/user', $data);
 	}		
 	public function deskripsi()
 	{
