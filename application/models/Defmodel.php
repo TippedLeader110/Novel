@@ -34,18 +34,21 @@ class Defmodel extends CI_Model {
 		$format = 'json';
 		$query =
 		"
+		
+
+PREFIX dbpedia2: <http://dbpedia.org/property/>
 		PREFIX d: <http://dbpedia.org/ontology/>
-		SELECT ?label ?wikiid ?c WHERE {
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		SELECT DISTINCT ?ab ?label ?wikiid ?c WHERE {
 		?ab  d:literaryGenre ?b.
 		?ab d:thumbnail ?c.
+		?ab d:abstract ?abs.
 		?ab rdfs:label ?label.
+		?ab d:literaryGenre ?genre.
+		?ab dbpedia2:author ?auth.
 		?ab d:wikiPageID ?wikiid.
-		?ab d:publicationDate ?date.
 		FILTER (lang(?label)='en')
 		}
-		ORDER BY DESC(?date)
-
-
 
 		";
 
@@ -64,10 +67,16 @@ class Defmodel extends CI_Model {
 
 		PREFIX d: <http://dbpedia.org/ontology/>
 		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX dbpedia2: <http://dbpedia.org/property/>
 
 		SELECT DISTINCT ?wiki ?b WHERE {
 		?ab  d:literaryGenre ?bc.
 		?ab d:thumbnail ?c.
+		?ab d:abstract ?abs.
+		?ab rdfs:label ?label.
+		?ab d:literaryGenre ?genre.
+		?ab dbpedia2:author ?auth.
+		?ab d:wikiPageID ?wikiid.
 		?bc rdfs:label ?b.
 		?bc d:wikiPageID ?wiki.
 		FILTER (lang(?b)='en').
