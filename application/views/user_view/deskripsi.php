@@ -4,7 +4,7 @@
 		$requestURL = $this->defmodel->getauth($uri);
 		// echo $requestURL;
 		$data = json_decode(request($requestURL),true);
-		foreach ($dsat["results"]["bindings"] as $key2){} 
+		foreach ($data["results"]["bindings"] as $key2){} 
 		
 		
  ?>

@@ -48,7 +48,7 @@
         <hr>
         <table class="table table-borderless">
             <?php $br=0; ?>
-          <?php foreach ($a["results"]["bindings"] as $key): ?>
+          <?php foreach ($dsat["results"]["bindings"] as $key): ?>
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
