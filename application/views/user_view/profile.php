@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-12" style="margin-bottom: 50px;">
 	<!-- ini header col -->
 	<div class="row">
 		<!-- Awal COL -->
@@ -20,7 +20,7 @@
 					<img src="<?php echo base_url() ?>img/rate.png" class="icon-profile">
 				</div>
 				<div class="title-profile">
-					What You Rated
+					Your Favourite
 				</div>
 			</div>
 		</div>
@@ -79,13 +79,21 @@
 		</div>
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey;">
-			
+		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
+			<ul>
+				<li>Favourite Contain 1</li>
+				<li>Favourite Contain 2</li>
+				<li>Favourite Contain 3</li>
+			</ul>
 		</div>
 		<!-- AKhir COL -->	
 		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6; margin-left: 15px; border-width: 1px; border-color: grey;">
-			
+		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6; margin-left: 15px; border-width: 1px; border-color: grey;padding-top: 20px; font-weight: 500; font-size: 18px;">
+			<ul>
+				<li>Commented Contain 1</li>
+				<li>Commented Contain 2</li>
+				<li>Commented Contain 3</li>
+			</ul>
 		</div>
 		<!-- AKhir COL -->
 	</div>
