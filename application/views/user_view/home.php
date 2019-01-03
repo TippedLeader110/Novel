@@ -1,12 +1,61 @@
-<div class="col-md-8 col-xs-8 col-sm-8">
+<div class="col-md-12">
+  <div class="container">
+    <div class="row">
+      <?php $u=0; ?>
+      <?php foreach ($dat["results"]["bindings"] as $key): ?>
+      <?php $u++; ?>
+
+      <!-- konten -->
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid" style="height: 300px;border-top: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-left: #e0e0d1 solid 1px;" >
+              <center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="height: 300px;width: 200px;"></a></center>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
+              <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endforeach ?>
+<?php echo $u ?>
+
+
+<!--
+<div class="col-md-12 col-xs-12 col-sm-12" style="background-color: grey">z
     <div class="container">
         <h4 style="color: orange;">Random Books</h4>
         <hr>
-        <div class="row">
+    </div>
+      <div class="row">
           <?php $u=0; ?>
           <?php foreach ($dat["results"]["bindings"] as $key): ?>
             <?php $u++; ?>
-
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid" style="height: 300px;border-top: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-left: #e0e0d1 solid 1px;" >
+              <center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="height: 300px;width: 200px;"></a></center>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
+              <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      -----------
           <div class="col-md-10">
             <div class="row">
               <div class="bg-image-konten">
@@ -17,20 +66,13 @@
               <div class="keterangan">
                 lorem lorem desu
               </div>
-            </div>
-            <!--<div style="background-color: white; border-style: solid; border-width: 5px; border-color: orange; min-height: 260px; max-height: 260px; min-width: 210px; min-width: 210px;">
-              <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>" title="<?php echo $key['wikiid']['value'] ?>" class="thumb">
-                  <img class="" src="<?php echo $key['c']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>" style=" max-height: 250px; min-width: 200px; padding: 5px 5px 5px 5px;">
-              </a> 
-            </div>
-                -->                   
+            </div>               
           </div>
-        </div>
+        
     </div>
-            
+</div>
           <?php endforeach ?>
           <?php echo $u ?>
-</div> 
-</div>
+       --> 
         <!-- Akhir field konten -->
 <!-- Akhir Div -->
