@@ -34,9 +34,9 @@ class User extends CI_Controller {
 		$user = $this->input->post('user');
 		$pass = $this->input->post('pass');
 		$pass = md5($pass);
-		$this->form_validation->set_rules('user', 'Username', 'required["%s wajib diisi"]|is_unique[users.username]',array('is_unique' => '%s sudah digunakan'));
-		$this->form_validation->set_rules('pass', 'Password', 'required[]',array('required' => '%s harus diisi'));
-		$this->form_validation->set_rules('email', 'Email', 'required["%s wajib diisi"]|is_unique[users.email]',array('is_unique' => '%s sudah digunakan'));
+		$this->form_validation->set_rules('user', 'Username', 'required[]|is_unique[users.username]',array('is_unique' => '%s already used'));
+		$this->form_validation->set_rules('pass', 'Password', 'required[]');
+		$this->form_validation->set_rules('email', 'Email', 'required[]|is_unique[users.email]',array('is_unique' => '%s already used'));
 
 		if ($this->form_validation->run()==FALSE) {
 			$data['page'] = 'user_view/daftar';
