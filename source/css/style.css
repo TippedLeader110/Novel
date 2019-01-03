@@ -4,6 +4,22 @@
 	a:hover{
 		text-decoration: none;
 	}
+	.bg-image-konten{
+		max-height: 250px;
+		max-width: 200px;
+		padding: 5px 5px 5px 5px;
+		background-color: #fff5e6;
+	}
+	.image-konten{
+		max-height: 250px;
+		max-width: 200px;
+		padding: 5px 5px 5px 5px;
+		background-color: #fff5e6;
+	}
+	.keterangan{
+		font-size: 18px;
+		color: black;
+	}
 	.bg-icon-profile{
 		min-width: 45px;
 		max-width: 45px;
@@ -33,7 +49,7 @@
 		max-width: 200px;
 		min-width: 200px;
 		max-height: 250px;
-		min-height: 250px;
+		min-height: 250px;		
 	}
 	.bg-img-deskr{
 		max-width: 210px;
@@ -41,19 +57,28 @@
 		max-height: 260px;
 		min-height: 260px;
 		padding-left: 5px;
+		padding-top: 4px;
 		background: #fff5e6;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
 	}
 	.deskr-title{
 		padding: 10px 10px 10px 10px;
 		font-size: 24px;
 		font-weight: 700;
 		background: #fff5e6;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
 	}
 	.deskr-subtitle{
 		padding: 20px;
-		font-size: 18px;
-		
+		font-size: 18px;		
 		background: #fff5e6;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
 	}
 	.active{
 		font-weight: 700;
@@ -73,6 +98,10 @@
 		background: #fff5e6;
 		margin-top: -5px;
 		padding-top: 15px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
+
 	}
 	.novel-list-bg{
 		min-width: 50px;
@@ -82,6 +111,9 @@
 		background: white;		
 		border-radius: 50%;
 		padding: 5px 5px 5px 5px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
 	}
 	.novel-list-img{
 		min-width: 30px;
@@ -104,6 +136,9 @@
 		padding-top: 10px;
 		padding-bottom: 7px;
 		text-align: center;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ebebe0;
 	}
 	.list-item{
 		padding: 5px 5px 5px 5px;
@@ -173,4 +208,3 @@
 	    background: inherit;
 	    left: 20px;
 	}
-	

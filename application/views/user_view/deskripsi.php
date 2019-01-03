@@ -44,7 +44,7 @@
 			<?php echo $key['ab']['value']; ?>
 		</div>
 		
-		<div style="min-width: 50px; max-width: 250px; background: #fff5e6; margin-left: -20px; padding: 10px 10px 10px 10px; margin-top: 10px;">
+		<div style="min-width: 50px; max-width: 250px; background: #fff5e6; margin-left: -20px; padding: 10px 10px 10px 10px; margin-top: 10px; border-style: solid; border-width: 1px; border-color: #ebebe0;">
 			<table border="0">
 				<tr>
 					<td>
