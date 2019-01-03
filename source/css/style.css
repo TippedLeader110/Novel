@@ -8,13 +8,13 @@
 		max-height: 250px;
 		max-width: 200px;
 		padding: 5px 5px 5px 5px;
+		margin: 10px 10px 10px 10px;
 		background-color: #fff5e6;
 	}
 	.image-konten{
 		max-height: 250px;
-		max-width: 200px;
-		padding: 5px 5px 5px 5px;
-		background-color: #fff5e6;
+		max-width: 200px;		
+		margin: 10px 10px 10px 10px;
 	}
 	.keterangan{
 		font-size: 18px;

@@ -57,8 +57,7 @@
 		</div>
 	</div>
 	<div class="row" style="margin-top: 30px;">		
-			<?php $this->load->view($kiri); ?>
-			<?php $this->load->view($kanan); ?>	
+			<?php $this->load->view($kiri); ?>			
 	</div>
 	<div class="row">
 		<?php include 'footer.php'; ?>
