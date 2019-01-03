@@ -21,7 +21,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="container-fluid" style="height: 300px;background: gray" >
-							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="max-height: 300px;max-width: 300px;"></a>
+							<center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="height: 300px;width: 200px;"></a></center>
 						</div>
 					</div>
 				</div>
