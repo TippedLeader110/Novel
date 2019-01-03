@@ -48,14 +48,20 @@ class Home extends CI_Controller {
 	public function genre()
 	{
 		include "a.php";
-		for ($i='a'; $i <= 'z' ; ++$i) { 
-			// echo "$i";
-		$re[$i] = $this->defmodel->genregetrdf($i);
-		$data[$i] = json_decode(request($re[$i]),true);
-		if ($i=='z') {
-				break;
+		$uri = $this->uri->segment(3);
+		if ($this->uri->segment(3)=='') {
+			$uri='a';
 		}
-		}
+		$re = $this->defmodel->genregetrdf($uri);
+		$data['dsat'] = json_decode(request($re),true);
+		// for ($i='a'; $i <= 'z' ; ++$i) { 
+		// // 	// echo "$i";
+		// $re[$i] = $this->defmodel->genregetrdf($i);
+		// $data[$i] = json_decode(request($re[$i]),true);
+		// if ($i=='z') {
+		// 		break;
+		// }
+		// }
 		// echo $re['a'];
 		$data['genre'] = 'active';
 		$data['home'] = 'a';
