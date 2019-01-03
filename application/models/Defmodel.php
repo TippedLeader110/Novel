@@ -70,13 +70,13 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 		PREFIX dbpedia2: <http://dbpedia.org/property/>
 
 		SELECT DISTINCT ?b ?wiki WHERE {
-                ?ab  d:literaryGenre ?bg.
+        ?ab  d:literaryGenre ?bg.
 		?ab d:thumbnail ?c.
 		?ab d:abstract ?abs.
 		?ab rdfs:label ?label.
 		?ab d:literaryGenre ?genre2.
-                ?genre2 rdfs:label ?b.
-                ?genre2 d:wikiPageID ?wiki.
+        ?genre2 rdfs:label ?b.
+        ?genre2 d:wikiPageID ?wiki.
 		?ab d:author ?auth.
 		?ab d:wikiPageID ?wikiid.
 		FILTER (lang(?label)='en').
