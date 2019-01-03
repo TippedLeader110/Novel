@@ -1,11 +1,12 @@
 <div class="col-md-12">
-  <h4>Random Books</h4>
+  <h4 style="color: orange;">Random Book</h4>
+  <hr>
   <div class="container">
     <div class="row">
       <?php $u=0; ?>
       <?php foreach ($dat["results"]["bindings"] as $key): ?>
       
-      <?php $id = rand(0,27) ?>
+      <?php $id = rand(0,68) ?>
 
       <!-- konten -->
       <div class="col-md-3">
