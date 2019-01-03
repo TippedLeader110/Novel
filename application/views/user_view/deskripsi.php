@@ -122,7 +122,7 @@ $d = $this->db->get('fav')->num_rows();
     let timerInterval
         Swal({
           title: 'Error !',
-          html: 'Login please !.',
+          html: 'Please Login  !.',
           type: 'error',
           timer: 1800,
           onBeforeOpen: () => {

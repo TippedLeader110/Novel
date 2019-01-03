@@ -97,5 +97,11 @@ class User extends CI_Controller {
 		$this->session->set_flashdata('swel', 'value');
 		redirect('home', location);
 	}
+	public function logout()
+	{
+		$this->session->set_flashdata('swel11', 'value');
+		session_destroy();
+		redirect('home', location);
+	}
 
 }

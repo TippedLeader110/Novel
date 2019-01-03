@@ -51,7 +51,7 @@ class Home extends CI_Controller {
 		include "a.php";
 		$uri = $this->uri->segment(3);
 		if ($this->uri->segment(3)=='') {
-			$uri='wadadadwada';
+			$uri='A';
 		}
 		$data['uri'] = $uri;
 		$re = $this->defmodel->genregetrdf($uri);
