@@ -45,7 +45,7 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 		?ab d:abstract ?abs.
 		?ab rdfs:label ?label.
 		?ab d:literaryGenre ?genre.
-		?ab dbpedia2:author ?auth.
+		?ab d:author ?auth.
 		?ab d:wikiPageID ?wikiid.
 		FILTER (lang(?label)='en')
 		}
@@ -77,7 +77,7 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 		?ab d:literaryGenre ?genre2.
                 ?genre2 rdfs:label ?b.
                 ?genre2 d:wikiPageID ?wiki.
-		?ab dbpedia2:author ?auth.
+		?ab d:author ?auth.
 		?ab d:wikiPageID ?wikiid.
 		FILTER (lang(?label)='en').
 FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
@@ -116,6 +116,38 @@ LIMIT 10
 
 		return $searchUrl;	
 	}
+	function getauth($uri)
+	{
+		
+		$format = 'json';
+		$query =
+		"
+
+		
+		PREFIX d: <http://dbpedia.org/ontology/>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX dbpedia2: <http://dbpedia.org/property/>
+
+		SELECT DISTINCT ?d ?auth ?auth2 WHERE {
+		?d  d:wikiPageID  ?wiki.
+		?d d:author ?aut.
+		?aut rdfs:label ?auth.
+		FILTER (lang(?auth)='en').
+		?aut d:wikiPageID ?auth2.
+
+
+
+				FILTER (?wiki = ".$uri.")
+
+		}
+		";
+
+		$searchUrl = 'http://dbpedia.org/sparql?'
+		.'query=' .urlencode($query)
+		.'&format='.$format;
+
+		return $searchUrl;	
+	}
 	function taggetrdf($uri, $tag)
 	{
 		
@@ -135,7 +167,7 @@ LIMIT 10
 		?ab d:literaryGenre ?genre2.
                 ?genre2 rdfs:label ?b.
                 ?genre2 d:wikiPageID ?wiki.
-		?ab dbpedia2:author ?auth.
+		?ab d:author ?auth.
 		?ab d:wikiPageID ?wikiid.
 FILTER (?wiki = ".$uri.").
 		FILTER (lang(?label)='en').
@@ -165,7 +197,7 @@ FILTER REGEX(?label, '^".$tag."(.*)$', 'i')
 		?d d:thumbnail ?img.
 		?d d:abstract ?ab.
 		?d d:literaryGenre ?genre.
-		?d dbpedia2:author ?auth.
+		?d d:author ?auth.
 		FILTER (lang(?label)='en').
 
 		FILTER (?wiki = ".$wiki.")

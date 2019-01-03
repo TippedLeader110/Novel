@@ -67,6 +67,7 @@ class Home extends CI_Controller {
 	{
 		include "a.php";
 		$uri = $this->uri->segment(3);
+		$data['uri'] = $this->uri->segment(3);
 		$requestURL = $this->defmodel->getpagerdf($uri);
 		// echo $requestURL;
 		$data['dsat'] = json_decode(request($requestURL),true);

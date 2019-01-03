@@ -1,4 +1,13 @@
 <?php foreach ($dsat["results"]["bindings"] as $key){} ?>
+<?php 
+		$uri = $uri;
+		$requestURL = $this->defmodel->getauth($uri);
+		// echo $requestURL;
+		$data = json_decode(request($requestURL),true);
+		foreach ($data["results"]["bindings"] as $key2){} 
+		
+		
+ ?>
 <div class="row" style="margin-bottom: 145px;">
 	<div class="col-md-3">
 		<div class="bg-img-deskr">
