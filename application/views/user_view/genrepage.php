@@ -1,5 +1,5 @@
 <div class="col-md-12 col-xs-12 col-sm-12">
-    <div class="container-fluid"  style="margin-top: 30px;"> 
+    <div class="container-fluid"  style="margin-top: 30px; margin-bottom: 50px;"> 
       <h4 style="color: orange;">Genre</h4>
         <hr>
       <form>

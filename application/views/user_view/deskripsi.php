@@ -13,6 +13,26 @@
 		<div class="bg-img-deskr">
 			<img src="<?php echo $key['img']['value'] ?>" class="img-deskr">
 		</div>
+		<div style="min-height: 50px; background: #fff5e6;">
+			<table>
+				<tr>
+					<td>
+						Author
+					</td>
+					<td>
+						<?php echo $key2['auth']['value']?>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Genre
+					</td>
+					<td>
+						<?php echo $key['genre']['value']?>						
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 
 	<!-- -->
