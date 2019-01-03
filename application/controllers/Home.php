@@ -85,6 +85,15 @@ class Home extends CI_Controller {
 		$data['kanan'] = 'user_view/konten-kanan';
 		$this->load->view('layout/selected-genre', $data);
 	}
+	public function search()
+	{
+		$data['genre'] = 'a';
+		$data['home'] = 'a';
+		$data['help'] = 'a';
+		$data['page'] = 'user_view/searchpage';
+		$data['kanan'] = 'user_view/konten-kanan';
+		$this->load->view('layout/search', $data);
+	}
 
 	public function inputfavorit()
 	{
