@@ -27,16 +27,19 @@
       </li>
     -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <?php if ($ex==''): ?>
+    <form class="form-inline my-2 my-lg-0" method="post" action="<?php echo base_url()?>home/search">
       <select class="form-control">
         <option value="all">All</option>
         <option value="1">option 1</option>
         <option value="2">option 2</option>
         <option value="3">option 3</option>
       </select>
-      <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
+      <input name="cari" class="form-control" type="search" placeholder="Search.." aria-label="Search">
       <button class="btn btn-default my-2 my-sm-0" type="submit">Go!</button>
     </form>
+    <?php $ex=''; ?>
+    <?php endif ?>
 
   </div>
 </nav>

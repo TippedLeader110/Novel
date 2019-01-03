@@ -58,6 +58,38 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 
 		return $searchUrl;	
 	}
+	function cari($uri)
+	{
+		
+		$format = 'json';
+		$query =
+		"
+
+		PREFIX d: <http://dbpedia.org/ontology/>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX dbpedia2: <http://dbpedia.org/property/>
+
+		SELECT DISTINCT ?label ?wikiid ?c WHERE {
+        ?ab  d:literaryGenre ?bg.
+		?ab d:thumbnail ?c.
+		?ab d:abstract ?abs.
+		?ab rdfs:label ?label.
+		?ab d:literaryGenre ?genre2.
+        ?genre2 rdfs:label ?b.
+        ?genre2 d:wikiPageID ?wiki.
+		?ab d:author ?auth.
+		?ab d:wikiPageID ?wikiid.
+		FILTER (lang(?label)='en').
+		FILTER REGEX(?label, '".$uri."', 'i')
+}
+		";
+
+		$searchUrl = 'http://dbpedia.org/sparql?'
+		.'query=' .urlencode($query)
+		.'&format='.$format;
+
+		return $searchUrl;	
+	}
 	function genregetrdf($uri)
 	{
 		

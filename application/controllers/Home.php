@@ -73,10 +73,14 @@ class Home extends CI_Controller {
 	}
 	public function search()
 	{
+		$data['ex'] = 1;
 		include "a.php";
 		$sea = $this->input->get('cari');
-		$sea = $this->defmodel->genregetrdf($sea);
-		$data[$sea] = json_decode(request($sea),true);
+		if ($this->input->post('cari')!='') {
+		$sea = $this->input->post('cari');
+		}
+		$sea = $this->defmodel->cari($sea);
+		$data['sea'] = json_decode(request($sea),true);
 		$data['genre'] = 'active';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
