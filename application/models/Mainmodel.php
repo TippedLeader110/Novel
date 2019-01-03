@@ -8,11 +8,12 @@ class Mainmodel extends CI_Model{
 		$this->load->view('welcome_message');
 	}
 
-	public function inputfavorit($idwiki, $insert, $iduser, $date)
+	public function inputfavorit($idwiki, $iduser, $date)
 	{
-		$data = array('idwiki' => $idwiki, 'insert' => $insert, 'iduser' => $iduser, 'tanggal' => $date);
-		$this->db->insert('favorit', $data);
-		redirect('');
+		$data = array('wikiid' => $idwiki, 'user' => $iduser, 'tanggal' => $date);
+		$this->db->insert('fav', $data);
+		$this->session->set_flashdata('swel2', 'value');
+		redirect("home/deskripsi/$idwiki");
 	}
 
 	public function inputkomen($idwiki, $komen, $iduser, $date)

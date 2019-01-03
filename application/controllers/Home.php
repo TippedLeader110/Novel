@@ -131,15 +131,52 @@ class Home extends CI_Controller {
 	// 	$this->load->view('layout/search', $data);
 	// }
 
-	public function inputfavorit()
+	public function simpan()
 	{
-		$idwiki = $this->input->post('idwiki');
-		$insert = $this->input->post('insert');
-		$iduser = $this->input->post('iduser');
-		$date = $this->input->post('date');
-		$this->mainmodel->inputfavorit($idwiki, $insert, $iduser, $date); 
+		$ur = $this->input->post('fav');
+		if ($_SESSION['user']=='') {
+			$this->session->set_flashdata('swel', 'value');
+			redirect("home/deskripsi/$ur");
+		}
+		else
+		{
+			$this->db->where('username', $this->session->user);
+			$user = $this->db->get('users')->result();
+			foreach ($user as $key => $value) {
+				$ud = $value->id_users;
+			}
+			// echo $ud;
+			$idwiki = $ur;
+			$iduser = $ud;
+			// $insert = $this->input->post('insert');
+			$date = date("d-m-Y");
+			$this->mainmodel->inputfavorit($idwiki, $iduser, $date); 
+			// echo "good";
+		}
 	}
-
+	public function del()
+	{
+		$ur = $this->input->post('fav');
+		if ($_SESSION['user']=='') {
+			$this->session->set_flashdata('swel', 'value');
+			redirect("home/deskripsi/$ur");
+		}
+		else
+		{
+			$this->db->where('username', $this->session->user);
+			$user = $this->db->get('users')->result();
+			foreach ($user as $key => $value) {
+				$ud = $value->id_users;
+			}
+			$this->db->where('user', $ud);
+			$this->db->where('wikiid', $ur);
+			$this->db->delete('fav');
+			$this->session->set_flashdata('swel4', 'value');
+			redirect("home/deskripsi/$ur");
+			// echo $ud;
+			// echo "good";
+		}
+	}
 	public function inputkomen()
 	{
 		$idwiki = $this->input->post('idwiki');
