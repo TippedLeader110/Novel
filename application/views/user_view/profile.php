@@ -1,8 +1,8 @@
-<div class="col-md-12" style="margin-bottom: 50px;">
+<div class="col-md-12" style="margin-bottom: 100px;">
 	<!-- ini header col -->
 	<div class="row">
 		<!-- Awal COL -->
-		<div class="col-md-4" style=" min-height: 55px;background: orange; margin-left: 15px;">
+		<div class="col-md-3" style=" min-height: 55px;background: orange; margin-left: 15px;">
 			<div class="row">
 				<div class="bg-icon-profile">
 					<img src="<?php echo base_url() ?>img/profile.png" class="icon-profile">
@@ -14,7 +14,7 @@
 		</div>
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 55px;background: orange;margin-left: 30px;">
+		<div class="col-md-8" style=" min-height: 55px;background: orange;margin-left: 30px;">
 			<div class="row">
 				<div class="bg-icon-profile">
 					<img src="<?php echo base_url() ?>img/rate.png" class="icon-profile">
@@ -24,28 +24,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- AKhir COL -->
-		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 55px;background: orange; margin-left: 15px;">
-			<div class="row">
-				<div class="bg-icon-profile">
-					<img src="<?php echo base_url() ?>img/komen.png" class="icon-profile">
-				</div>
-				<div class="title-profile">
-					<h5 style="margin-top: 5px;">What You Commented</h5>
-				</div>
-			</div>
-		</div>
-		<!-- AKhir COL -->
+		<!-- AKhir COL -->			
 	</div>
 	<!-- ini contain col -->	
 	<div class="row">
 		<!-- Awal COL -->
-		<div class="col-md-4" style=" min-height: 300px;background: #fff5e6; margin-left: 15px;  border-width: 1px; border-color: grey;">
-			<div class="container" style="background: white; min-height: 150px; max-width: 200px; margin-top: 20px; border-width: 1px; border-color: grey;">
-				<img src="<?php echo base_url() ?>img/image.png" style="min-height: 150px; max-width: 200px; opacity: 0.7; padding-left: 10px;">
-			</div>
-			<!-- akhir field image profile -->
+		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6; margin-left: 15px;  border-width: 1px; border-color: grey;">			
 			
 			<div class="container" style="background: white; min-height: 40px; max-width: 200px; margin-top: 20px; border-width: 1px; border-color: grey;">
 				<table width="160" border="0">
@@ -79,7 +63,7 @@
 		</div>
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
+		<div class="col-md-8" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
 			<ul>
 				<li>Favourite Contain 1</li>
 				<li>Favourite Contain 2</li>
@@ -87,14 +71,5 @@
 			</ul>
 		</div>
 		<!-- AKhir COL -->	
-		<!-- Awal COL -->
-		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6; margin-left: 15px; border-width: 1px; border-color: grey;padding-top: 20px; font-weight: 500; font-size: 18px;">
-			<ul>
-				<li>Commented Contain 1</li>
-				<li>Commented Contain 2</li>
-				<li>Commented Contain 3</li>
-			</ul>
-		</div>
-		<!-- AKhir COL -->
 	</div>
 </div>
