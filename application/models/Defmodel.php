@@ -260,7 +260,8 @@ FILTER REGEX(?label, '^".$tag."(.*)$', 'i')
 		?d rdfs:label ?label.
 		?d d:thumbnail ?img.
 		?d d:abstract ?ab.
-		?d d:literaryGenre ?genre.
+		?d d:literaryGenre ?gen.
+		?gen rdfs:label ?genre.
 		?d d:author ?auth.
 		FILTER (lang(?label)='en').
 
