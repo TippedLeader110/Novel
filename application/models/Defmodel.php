@@ -82,10 +82,6 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 		FILTER (lang(?b)='en').
 FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
 }
-LIMIT 10
-
-
-		
 		";
 
 		$searchUrl = 'http://dbpedia.org/sparql?'

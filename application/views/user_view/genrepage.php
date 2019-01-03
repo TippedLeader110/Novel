@@ -44,7 +44,7 @@
     <!-- awal field konten -->
     <div class="container-fluid" style="margin-top: 30px;" id="B">      
         <div class="table-resnpon">
-        <h4 style="color: orange;">A</h4>
+        <h4 style="color: orange;"><?php echo $uri ?></h4>
         <hr>
         <table class="table table-borderless">
             <?php $br=0; ?>
@@ -52,7 +52,7 @@
             <?php if ($br==0): ?>
               <tr> 
             <?php endif ?>
-          <td><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><?php echo $key['label']['value'] ?></a></td>
+          <td><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wiki']['value'] ?>"><?php echo $key['b']['value'] ?></a></td>
           <?php $br++; ?>
             <?php if ($br=='7'): ?>
             </tr>

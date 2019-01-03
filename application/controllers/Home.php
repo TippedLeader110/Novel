@@ -52,7 +52,9 @@ class Home extends CI_Controller {
 		if ($this->uri->segment(3)=='') {
 			$uri='A';
 		}
+		$data['uri'] = $uri;
 		$re = $this->defmodel->genregetrdf($uri);
+		// echo "$re";
 		$data['dsat'] = json_decode(request($re),true);
 		// for ($i='a'; $i <= 'z' ; ++$i) { 
 		// // 	// echo "$i";
