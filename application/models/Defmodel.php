@@ -65,10 +65,11 @@ class Defmodel extends CI_Model {
 		PREFIX d: <http://dbpedia.org/ontology/>
 		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-		SELECT DISTINCT  ?b WHERE {
+		SELECT DISTINCT ?wiki ?b WHERE {
 		?ab  d:literaryGenre ?bc.
 		?ab d:thumbnail ?c.
-		?bc rdfs:label ?b
+		?bc rdfs:label ?b.
+		?bc d:wikiPageID ?wiki.
 		FILTER (lang(?b)='en').
 		FILTER REGEX(?b, '^".$uri."(.*)$', 'i')
 

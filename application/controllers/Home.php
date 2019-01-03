@@ -38,13 +38,18 @@ class Home extends CI_Controller {
 		$data['page'] = 'user_view/daftar';
 		$this->load->view('layout/user', $data);	
 	}
+	public function genrecari()
+	{
+		$i = $this->uri->segment(3);
+		$re = $this->defmodel->genrerdf($i);
+		$data['dat'] = json_decode(request($re),true);
+
+	}
 	public function genre()
 	{
-		// $uri = $this->uri->segment(3);
-
 		include "a.php";
 		for ($i='a'; $i <= 'z' ; ++$i) { 
-			echo "$i";
+			// echo "$i";
 		$re[$i] = $this->defmodel->genregetrdf($i);
 		$data[$i] = json_decode(request($re[$i]),true);
 		if ($i=='z') {
