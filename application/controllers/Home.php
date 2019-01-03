@@ -64,6 +64,11 @@ class Home extends CI_Controller {
 	}		
 	public function deskripsi()
 	{
+		include "a.php";
+		$uri = $this->uri->segment(3);
+		$requestURL = $this->defmodel->getpagerdf($uri);
+		// echo $requestURL;
+		$data['dsat'] = json_decode(request($requestURL),true);
 		$data['genre'] = 'a';
 		$data['home'] = 'a';
 		$data['help'] = 'a';

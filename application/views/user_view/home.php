@@ -12,7 +12,7 @@
                <div class="panel panel-default">
                   <div class="panel-thum
                   bnail">
-                    <a href="<?php $str ?>" title="<?php echo $key['wikiid']['value'] ?>" class="thumb">
+                    <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>" title="<?php echo $key['wikiid']['value'] ?>" class="thumb">
                       <img class="img-fluid mx-auto d-block" src="<?php echo $key['c']['value'] ?>" alt="<?php echo $key['wikiid']['value'] ?>">
                     </a>
                   </div>
