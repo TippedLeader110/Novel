@@ -264,6 +264,8 @@ FILTER REGEX(?label, '^".$tag."(.*)$', 'i')
 		?gen rdfs:label ?genre.
 		?d d:author ?auth.
 		FILTER (lang(?label)='en').
+		FILTER (lang(?genre)='en').
+		FILTER (lang(?ab)='en').
 
 		FILTER (?wiki = ".$wiki.")
 
