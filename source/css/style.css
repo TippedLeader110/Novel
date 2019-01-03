@@ -40,10 +40,11 @@
 		min-width: 210px;
 		max-height: 260px;
 		min-height: 260px;
+		padding-left: 5px;
 		background: #fff5e6;
 	}
 	.deskr-title{
-		padding: 20px;
+		padding: 10px 10px 10px 10px;
 		font-size: 24px;
 		font-weight: 700;
 		background: #fff5e6;
@@ -51,7 +52,7 @@
 	.deskr-subtitle{
 		padding: 20px;
 		font-size: 18px;
-		font-weight: 600;
+		
 		background: #fff5e6;
 	}
 	.active{
@@ -172,3 +173,4 @@
 	    background: inherit;
 	    left: 20px;
 	}
+	
