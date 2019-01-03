@@ -49,7 +49,7 @@ PREFIX dbpedia2: <http://dbpedia.org/property/>
 		?ab d:wikiPageID ?wikiid.
 		FILTER (lang(?label)='en')
 		}
- 		LIMIT 10
+ 		LIMIT 30
 		";
 
 		$searchUrl = 'http://dbpedia.org/sparql?'

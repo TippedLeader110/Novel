@@ -93,8 +93,8 @@ $d = $this->db->get('fav')->num_rows();
 <script type="text/javascript">
     let timerInterval
         Swal({
-          title: 'Sukses !',
-          html: 'Buku telah di faforitkan !.',
+          title: 'Success !',
+          html: 'Added to favorite !.',
           type: 'success',
           timer: 1800,
           onBeforeOpen: () => {
@@ -121,8 +121,8 @@ $d = $this->db->get('fav')->num_rows();
 <script type="text/javascript">
     let timerInterval
         Swal({
-          title: 'Kesalahan !',
-          html: 'Login terlebih dahulu !.',
+          title: 'Error !',
+          html: 'Login please !.',
           type: 'error',
           timer: 1800,
           onBeforeOpen: () => {
@@ -149,8 +149,8 @@ $d = $this->db->get('fav')->num_rows();
 <script type="text/javascript">
     let timerInterval
         Swal({
-          title: 'Dihapus !',
-          html: 'Buku telah dihapus dari favorite !.',
+          title: 'Deleted !',
+          html: 'Deleted from favorite!.',
           type: 'success',
           timer: 1800,
           onBeforeOpen: () => {

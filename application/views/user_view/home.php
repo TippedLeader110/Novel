@@ -3,30 +3,34 @@
     <div class="row">
       <?php $u=0; ?>
       <?php foreach ($dat["results"]["bindings"] as $key): ?>
-      <?php $u++; ?>
+      
+      <?php $id = rand(0,27) ?>
 
       <!-- konten -->
       <div class="col-md-3">
         <div class="row">
           <div class="col-md-12">
             <div class="container-fluid" style="height: 300px;border-top: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-left: #e0e0d1 solid 1px;" >
-              <center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="height: 300px;width: 200px;"></a></center>
+              <center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $dat["results"]["bindings"][$id]['wikiid']['value'] ?>"><img src="<?php echo $dat["results"]["bindings"][$id]['c']['value'] ?>" style="height: 300px;width: 200px;"></a></center>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
-              <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
+              <a href="<?php echo base_url() ?>home/deskripsi/<?php echo $dat["results"]["bindings"][$id]['wikiid']['value'] ?>"><h5><?php echo $dat["results"]["bindings"][$id]['label']['value'] ?></h5></a></center>
             </div>
           </div>
         </div>
       </div>
+      <?php $u++; ?>
+      <?php if ($u==8): ?>
+        <?php break; ?>
+      <?php endif ?>
 <?php endforeach ?>
     </div>
   </div>
 </div>
-<?php echo $u ?>
 
 
 <!--
@@ -75,3 +79,33 @@
        --> 
         <!-- Akhir field konten -->
 <!-- Akhir Div -->
+<!-- ----------------------------BAYHAQI AREA JANGAN EDIT------------------------------- -->
+
+<?php if ($this->session->flashdata('swel')!=''): ?>
+<script type="text/javascript">
+    let timerInterval
+        Swal({
+          title: 'Job done !',
+          html: 'Login success.',
+          type: 'success',
+          timer: 1500,
+          onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              Swal.getContent().querySelector('strong')
+                .textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          onClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.timer
+          ) {
+            console.log('I was closed by the timer')
+          }
+        })
+</script>
+<?php endif ?>

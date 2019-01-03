@@ -20,6 +20,7 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		// session_destroy();
 		// allow_url_include=1;
 		$requestURL = $this->defmodel->getFUSEKI();
 		include "a.php";

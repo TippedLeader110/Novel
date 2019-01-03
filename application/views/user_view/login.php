@@ -81,8 +81,8 @@ function myFunction() {
 <script type="text/javascript">
     let timerInterval
         Swal({
-          title: 'Kesalahan !',
-          html: 'Username atau Password anda salah !.',
+          title: 'Error !',
+          html: 'Wrong Password or Username !.',
           type: 'error',
           timer: 1500,
           onBeforeOpen: () => {
@@ -109,8 +109,8 @@ function myFunction() {
 <script type="text/javascript">
     let timerInterval
         Swal({
-          title: 'Sukses!',
-          html: 'Berhasil daftar, silahkan login.',
+          title: 'Great Job!',
+          html: 'Your accoutn has been created, please login.',
           type: 'success',
           timer: 1500,
           onBeforeOpen: () => {
