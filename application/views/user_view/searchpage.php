@@ -17,17 +17,17 @@
 		<?php if ($i==0): ?>
 		<div class="row">
 		<?php endif ?>
-			<div class="col-md-3" style="background: white">
+			<div class="col-md-3">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="container-fluid" style="height: 300px">
-							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="max-height: 300px"></a>
+						<div class="container-fluid" style="height: 300px;background: gray" >
+							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><img src="<?php echo $key['c']['value'] ?>" style="max-height: 300px;max-width: 300px;"></a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="container-fluid"><center>
+						<div class="container-fluid" style="background: gray"><center>
 							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $key['wikiid']['value'] ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
 						</div>
 					</div>
