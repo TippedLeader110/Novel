@@ -64,7 +64,7 @@ $d = $this->db->get('fav')->num_rows();
 						</a>
 
 					</td>
-					<td>Add to Your Favorite!</td>
+					<td>Add to Your Favourite!</td>
 				</tr></form>
 				<tr>
 					
@@ -79,7 +79,7 @@ $d = $this->db->get('fav')->num_rows();
 						</a>
 
 					</td>
-					<td>Delete from favorite!</td>
+					<td>Delete from favourite!</td>
 				</tr></form>
 				<tr>
 					
@@ -94,7 +94,7 @@ $d = $this->db->get('fav')->num_rows();
     let timerInterval
         Swal({
           title: 'Success !',
-          html: 'Added to favorite !.',
+          html: 'Added to Favourite !.',
           type: 'success',
           timer: 1800,
           onBeforeOpen: () => {
@@ -150,7 +150,7 @@ $d = $this->db->get('fav')->num_rows();
     let timerInterval
         Swal({
           title: 'Deleted !',
-          html: 'Deleted from favorite!.',
+          html: 'Deleted from Favourite!.',
           type: 'success',
           timer: 1800,
           onBeforeOpen: () => {

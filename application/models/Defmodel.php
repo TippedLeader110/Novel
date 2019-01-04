@@ -279,6 +279,39 @@ FILTER REGEX(?label, '^".$tag."(.*)$', 'i')
 
 		return $searchUrl;	
 	}
+	function trans($wiki)
+	{
+		$format = 'json';
+		$query =
+		"
+		PREFIX dbpedia2: <http://dbpedia.org/property/>
+		PREFIX d: <http://dbpedia.org/ontology/>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+		SELECT DISTINCT * WHERE {
+        ?d  d:wikiPageID  ?wiki.
+		?d rdfs:label ?label.
+		?d d:thumbnail ?img.
+		?d d:abstract ?ab.
+		?d d:literaryGenre ?gen.
+		?gen rdfs:label ?genre.
+		?d d:author ?auth.
+		FILTER (lang(?label)='en').
+		FILTER (lang(?genre)='en').
+		FILTER (lang(?ab)='en').
+
+		FILTER (?wiki = ".$wiki.")
+
+				}
+		LIMIT 10
+		";
+
+		$searchUrl = 'http://dbpedia.org/sparql?'
+		.'query=' .urlencode($query)
+		.'&format='.$format;
+
+		return $searchUrl;	
+	}
 	function getUrlDbpediaAbstract($term)
 	{
 		$format = 'json';

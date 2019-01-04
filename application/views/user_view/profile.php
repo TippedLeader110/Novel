@@ -39,7 +39,7 @@
 							
 						</td>
 						<td style="padding-top: 5px;">
-							<h5>user_name</h5>
+							<h5><?php echo $this->session->user ?></h5>
 						</td>
 					</tr>
 				</table>
@@ -52,7 +52,11 @@
 							
 						</td>
 						<td style="padding-top: 5px;">
-							<h5>user_email</h5>
+							<?php $this->db->where('username', $this->session->user);
+							$do = $this->db->get('users')->result();
+							foreach ($do as $key => $value) {
+							 } ?>
+							<h5><?php echo $value->email ?></h5>
 						</td>
 					</tr>
 				</table>
@@ -64,11 +68,36 @@
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
 		<div class="col-md-8" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
-			<ul>
-				<li>Favourite Contain 1</li>
-				<li>Favourite Contain 2</li>
-				<li>Favourite Contain 3</li>
-			</ul>
+			<div class="row">
+				<?php include 'a.php'; ?>
+				<?php foreach ($da as $key => $v): ?>
+				<?php 
+				$re = $this->defmodel->trans($v->wikiid);
+				$dsat = json_decode(request($re),true);
+				foreach ($dsat["results"]["bindings"] as $key) {
+					$haha = $key['label']['value'];
+				}
+				 ?>
+
+				<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="container-fluid" style="height: 300px;border-top: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-left: #e0e0d1 solid 1px;" >
+							<center><a href="<?php echo base_url() ?>home/deskripsi/<?php echo $v->wikiid ?>"><img src="<?php echo $key['img']['value'] ?>" style="height: 300px;width: 180px;"></a></center>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
+							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $v->wikiid ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+					
+				<?php endforeach ?>
+			</div>
 		</div>
 		<!-- AKhir COL -->	
 	</div>

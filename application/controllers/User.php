@@ -52,6 +52,15 @@ class User extends CI_Controller {
 	}
 	public function profile()
 	{	
+		$us = $this->session->user;
+		$this->db->where('username', $us);
+		$ha = $this->db->get('users')->result();
+		foreach ($ha as $key => $value) {
+			$dd = $value->id_users;
+		}
+
+		$this->db->where('user', $dd);
+		$data['da'] = $this->db->get('fav')->result();
 		$data['genre'] = 'a';
 		$data['home'] = 'a';
 		$data['help'] = 'a';
