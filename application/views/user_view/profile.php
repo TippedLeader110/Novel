@@ -31,32 +31,32 @@
 		<!-- Awal COL -->
 		<div class="col-md-3" style=" min-height: 300px;background: #fff5e6; margin-left: 15px;  border-width: 1px; border-color: grey;">			
 			
-			<div class="container" style="background: white; min-height: 40px; max-width: 200px; margin-top: 20px; border-width: 1px; border-color: grey;">
+			<div class="container" style="background: white; min-height: 40px; max-width: 200px; margin-top: 20px; border-width: 1px; border-color: #d6d6c2; border-style: solid;">
 				<table width="160" border="0">
 					<tr>
 						<td style="width: 30px;">
 							<img src="<?php echo base_url() ?>img/profile.png" style="max-width: 25px; max-height: 25px; padding-top: 7px;">
 							
 						</td>
-						<td style="padding-top: 5px;">
-							<h5><?php echo $this->session->user ?></h5>
+						<td style="padding-top: 5px; max-width: 140px; font-size: 17px; font-weight: 500;" class="text-truncate"">
+							<span title="<?php echo $this->session->user ?>"><?php echo $this->session->user ?></span>							
 						</td>
 					</tr>
 				</table>
 			</div>
-			<div class="container" style="background: white; min-height: 40px; max-width: 200px; margin-top: 5px; border-width: 1px; border-color: grey;">
+			<div class="container" style="background: white; min-height: 40px; max-width: 200px; margin-top: 5px; border-width: 1px; border-color: #d6d6c2; border-style: solid;">
 				<table width="160" border="0">
 					<tr>
 						<td style="width: 30px;">
 							<img src="<?php echo base_url() ?>img/email.png" style="max-width: 25px; max-height: 25px; padding-top: 7px;">
 							
 						</td>
-						<td style="padding-top: 5px;">
+						<td style="padding-top: 5px;padding-left: 10px; max-width: 140px; font-size: 17px; font-weight: 500;" class="text-truncate">
 							<?php $this->db->where('username', $this->session->user);
 							$do = $this->db->get('users')->result();
 							foreach ($do as $key => $value) {
 							 } ?>
-							<h5><?php echo $value->email ?></h5>
+							<span title="<?php echo $value->email ?>"><?php echo $value->email ?></span>
 						</td>
 					</tr>
 				</table>
