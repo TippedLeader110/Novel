@@ -112,5 +112,45 @@ class User extends CI_Controller {
 		session_destroy();
 		redirect('home', location);
 	}
+	public function edit()
+	{
+		$email = $this->input->post('email');
+		$oldpass = $this->input->post('oldpass');
+		$oldpass = md5($oldpass);
+		$newpass = $this->input->post('newpass');
+		$newpass = md5($newpass);
+		// echo "$oldpass";
+		$this->db->where('username', $this->session->user);
+		$this->db->where('password', $oldpass);
+		$row = $this->db->get('users')->num_rows();
+		if ($row!=0) {
+			$this->db->set('password', $newpass);
+			$this->db->set('email', $email);
+			$this->db->where('username', $this->session->user);
+			$this->db->update('users');
+			$this->session->set_flashdata('done', 'value');
+			redirect("user/profile");
+		}
+		else
+		{
+			$this->session->set_flashdata('done', 'value');
+			redirect("user/editdata");
+		}
+
+		// $this->form_validation->set_rules('user', 'Username', 'required[]|is_unique[users.username]',array('is_unique' => '%s already used'));
+		// $this->form_validation->set_rules('pass', 'Password', 'required[]');
+		// $this->form_validation->set_rules('email', 'Email', 'required[]|is_unique[users.email]',array('is_unique' => '%s already used'));
+
+		// if ($this->form_validation->run()==FALSE) {
+		// 	$data['page'] = 'user_view/daftar';
+		// 	$this->load->view('layout/user', $data);
+		// }
+		// else{
+		// $da = array('email' => $email, 'username' => $user, 'password' => $pass );
+		// $this->db->insert('users', $da);
+		// $this->session->set_flashdata('swel', 'value');
+		// redirect('user/login');
+		
+	}
 
 }
