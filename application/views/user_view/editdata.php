@@ -4,12 +4,7 @@
 	 			<h3>Edit Your Data</h3>
 	 		</div>
 	 		<div class="form-login">
-	 			<table border="0" style="min-width: 320px;">
-	 				<tr>
-	 					<td colspan="2">
-	 						<input type="text" name="user" class="form-control" placeholder="Username">
-	 					</td>
-	 				</tr>
+	 			<table border="0" style="min-width: 320px;">	 				
 	 				<tr>
 	 					<td colspan="2" style="padding-top: 10px;">
 	 						<input type="text" name="email" class="form-control" placeholder="Email">

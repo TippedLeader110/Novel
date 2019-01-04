@@ -10,7 +10,7 @@
   <div>
     <?php if ($this->session->user!=''): ?>
     <a href="<?php echo base_url() ?>user/profile" class="btn" style="background-color: white; border-width: 2px; border-color: orange; color: orange; font-size: 18px;" title="Click Here to See Your Profile">Welcome ,<b> <?php echo $this->session->user ?></b> !</a>    
-      <a href="<?php echo base_url() ?>user/logout" class="btn" style="border-width: 2px; border-color: orange; color: orange; font-size: 18px; margin-left: 720px;" title="Sign Out">
+      <a href="<?php echo base_url() ?>user/logout" class="btn" style="border-width: 2px; border-color: orange; color: orange; font-size: 18px; margin-left: 780px;" title="Sign Out">
         <b>Sign Out</b>
       </a>    
     <?php endif ?>

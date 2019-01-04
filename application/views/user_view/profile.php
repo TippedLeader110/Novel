@@ -54,9 +54,9 @@
 						<td style="padding-top: 5px;padding-left: 10px; max-width: 140px; font-size: 17px; font-weight: 500;" class="text-truncate">
 							<?php $this->db->where('username', $this->session->user);
 							$do = $this->db->get('users')->result();
-							foreach ($do as $key => $value) {
+							foreach ($do as $key => $rr) {
 							 } ?>
-							<span title="<?php echo $value->email ?>"><?php echo $value->email ?></span>
+							<span title="<?php echo $rr->email ?>"><?php echo $rr->email ?></span>
 						</td>
 					</tr>
 				</table>
@@ -68,6 +68,7 @@
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
 		<div class="col-md-8" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
+			<h4 style="color: orange;">You can Unfavourite Book by Click the button</h4>
 			<div class="row">
 				<?php include 'a.php'; ?>
 				<?php foreach ($da as $key => $v): ?>
@@ -88,7 +89,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12">					
 						<div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
 							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $v->wikiid ?>"><h6><?php echo $key['label']['value'] ?></h6></a></center>
 						</div>

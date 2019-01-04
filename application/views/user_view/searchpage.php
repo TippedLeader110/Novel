@@ -6,8 +6,10 @@
 					<div class="table-responsive">
 						<table class="table table-borderless">
 							<tr>
-								<td><input value="<?php echo $_GET['cari'] ?>" type="text" name="cari" class="form-control"></td>
-								<td><button class="btn">Cari</button></td>
+								<td style="min-width: 540px;">
+									<input value="<?php echo $_GET['cari'] ?>" type="text" name="cari" class="form-control" placeholder="Search Here..">
+								</td>
+								<td><button class="btn">Go!</button></td>
 							</tr>
 						</table>
 					</div>
