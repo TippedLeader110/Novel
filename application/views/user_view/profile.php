@@ -57,7 +57,7 @@
 							foreach ($do as $key => $rr) {
 							 } ?>
 							<span title="<?php echo $rr->email ?>"><?php echo $rr->email ?></span>
-						</td>
+						</td><?php $this->session->email = $value->email ?>
 					</tr>
 				</table>
 			</div>
@@ -103,3 +103,31 @@
 		<!-- AKhir COL -->	
 	</div>
 </div>
+<?php if ($this->session->flashdata('done')!=''): ?>
+<script type="text/javascript">
+    let timerInterval
+        Swal({
+          title: 'Job done !',
+          html: 'Data updated.',
+          type: 'success',
+          timer: 1500,
+          onBeforeOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+              Swal.getContent().querySelector('strong')
+                .textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          onClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then((result) => {
+          if (
+            // Read more about handling dismissals
+            result.dismiss === Swal.DismissReason.timer
+          ) {
+            console.log('I was closed by the timer')
+          }
+        })
+</script>
+<?php endif ?>
