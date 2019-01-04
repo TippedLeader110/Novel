@@ -64,7 +64,7 @@ $d = $this->db->get('fav')->num_rows();
 						</a>
 
 					</td>
-					<td>Add to Your Favourite!</td>
+					<td>Add to Your Favorite!</td>
 				</tr></form>
 				<tr>
 					
@@ -75,11 +75,11 @@ $d = $this->db->get('fav')->num_rows();
 					<td><form name="form" method="post" action="<?php echo base_url() ?>home/del">
 						<a href="#">
 							<input type="text" hidden value="<?php echo $uri ?>" name="fav">
-							<img onclick="form.submit()" src="<?php echo base_url() ?>img/cek.png" style="max-width: 50px; max-height: 50px;">
+							<img onclick="form.submit()" src="<?php echo base_url() ?>img/cross.png" style="max-width: 50px; max-height: 50px;">
 						</a>
 
 					</td>
-					<td>Telah ditambahkan ke favorite!</td>
+					<td>Delete from favorite!</td>
 				</tr></form>
 				<tr>
 					
