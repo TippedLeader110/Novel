@@ -90,7 +90,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="container-fluid" style="margin-bottom: 20px;border-left: #e0e0d1 solid 1px;border-right: #e0e0d1 solid 1px;border-top: #e0e0d1 solid 1px;border-bottom: #e0e0d1 solid 1px; padding: 10px 10px 10px 10px;"><center>
-							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $v->wikiid ?>"><h5><?php echo $key['label']['value'] ?></h5></a></center>
+							<a href="<?php echo base_url() ?>home/deskripsi/<?php echo $v->wikiid ?>"><h6><?php echo $key['label']['value'] ?></h6></a></center>
 						</div>
 					</div>
 				</div>

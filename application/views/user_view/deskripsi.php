@@ -5,6 +5,7 @@ foreach ($da as $key => $value) {
 	$daa = $value->id_users;
 }
 $this->db->where('user', $daa);
+$this->db->where('wikiid', $uri);
 $d = $this->db->get('fav')->num_rows();
  ?>
 <?php foreach ($dsat["results"]["bindings"] as $key){} ?>
