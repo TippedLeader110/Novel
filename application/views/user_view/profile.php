@@ -68,7 +68,9 @@
 		<!-- AKhir COL -->
 		<!-- Awal COL -->
 		<div class="col-md-8" style=" min-height: 300px;background: #fff5e6;margin-left: 30px; border-width: 1px; border-color: grey; padding-top: 20px; font-weight: 500; font-size: 18px;">
-			<h4 style="color: orange;">You can Unfavourite Book by Click the button</h4>
+			<h5 style="color: orange;">Tips :</h5>
+			<h6 style="color: orange;">You can Unfavourite Book by Click the Book then Click <i>Delete from favourite</i> Button</h6>
+			<br>
 			<div class="row">
 				<?php include 'a.php'; ?>
 				<?php foreach ($da as $key => $v): ?>

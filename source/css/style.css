@@ -4,6 +4,9 @@
 	a:hover{
 		text-decoration: none;
 	}
+	h6:a{
+		color: orange;
+	}
 	.bg-image-konten{
 		max-height: 250px;
 		max-width: 200px;

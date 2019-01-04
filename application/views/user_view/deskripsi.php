@@ -29,7 +29,7 @@ $d = $this->db->get('fav')->num_rows();
 					<td>
 						<b>Author</b>
 					</td>
-					<td style="padding-left: 5px; ">
+					<td style="padding-left: 5px; max-width: 150px;" class="text-truncate">
 						<?php echo $key2['auth']['value']?>
 					</td>
 				</tr>
@@ -37,7 +37,7 @@ $d = $this->db->get('fav')->num_rows();
 					<td>
 						<b>Genre</b>
 					</td>
-					<td style="padding-left: 5px; ">
+					<td style="padding-left: 5px; max-width: 150px;" class="text-truncate">
 						<?php echo $key['genre']['value']?>						
 					</td>
 				</tr>
@@ -61,7 +61,7 @@ $d = $this->db->get('fav')->num_rows();
 					<td><form name="form" method="post" action="<?php echo base_url() ?>home/simpan">
 						<a href="#">
 							<input type="text" hidden value="<?php echo $uri ?>" name="fav">
-							<img onclick="form.submit()" src="<?php echo base_url() ?>img/add.png" style="max-width: 50px; max-height: 50px;">
+							<img onclick="form.submit()" src="<?php echo base_url() ?>img/love-unactive.png" style="max-width: 35px; max-height: 35px;">
 						</a>
 
 					</td>
@@ -76,11 +76,11 @@ $d = $this->db->get('fav')->num_rows();
 					<td><form name="form" method="post" action="<?php echo base_url() ?>home/del">
 						<a href="#">
 							<input type="text" hidden value="<?php echo $uri ?>" name="fav">
-							<img onclick="form.submit()" src="<?php echo base_url() ?>img/cross.png" style="max-width: 50px; max-height: 50px;">
+							<img onclick="form.submit()" src="<?php echo base_url() ?>img/love-active.png" style="max-width: 30px; max-height: 30px;">
 						</a>
 
 					</td>
-					<td>Delete from favourite!</td>
+					<td style="padding-left: 5px;">Delete from favourite!</td>
 				</tr></form>
 				<tr>
 					
