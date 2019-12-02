@@ -35,6 +35,7 @@ CREATE TABLE `fav` (
   `nama_novel` varchar(30) DEFAULT NULL,
   `wikiid` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `novel`.`users` ( `id_user` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(32) NOT NULL , `password` VARCHAR(32) NOT NULL , `nama` TEXT NOT NULL , PRIMARY KEY (`id_user`)) ENGINE = InnoDB;
 
 --
 -- Indexes for dumped tables
